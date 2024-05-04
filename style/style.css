@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primary-color-1 : #6C72FF;
+    --primary-color-2 : linear-gradient(#CB3CFF, #7F25FB);
+
+    --secondary-color-1 : #101935;
+    --secondary-color-2 : #8951FF;
+    --secondary-color-3 : #57C3FF;
+    --secondary-color-4 : #9A91FB;
+    --secondary-color-5 : #FDB52A;
+
+    --sub-color-1 : #080F25;
+    --sub-color-2 : #212C4D;
+    --sub-color-3 : #37446B;
+    --sub-color-4 : #7E89AC;
+    --sub-color-5 : #AEB9E1;
+    --sub-color-6 : #D1DBF9;
+    --sub-color-7 : #D9E1FA;
+    --sub-color-8 : #FFFFFF;
+}
+
+form[role="search"] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+input[type="search"] {
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: var(--secondary-color-1);
+    color: var(--sub-color-5)
+}
+input[type="search"]::placeholder{
+    color: var(--sub-color-5)
+}
+button[type="submit"] {
+    position: absolute;
+    left: 10px;
+    border:none;
+    background: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    filter: brightness(200%);
+}
+
